@@ -1,0 +1,192 @@
+<html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Personnel Registry</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0d0f15;
+        font-family: "Roboto", sans-serif;
+        color: #c7d4e3;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    /* LEFT SIDEBAR */
+    .sidebar {
+        width: 360px;
+        background: #0f131a;
+        border-right: 1px solid #1d2430;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    h2 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        color: #6cbcff;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 10px;
+        background: #131922;
+        border: 1px solid #1f2a38;
+        color: #cdd9e3;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .filters {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .filter-btn {
+        padding: 5px 10px;
+        border: 1px solid #2a3647;
+        border-radius: 12px;
+        font-size: 11px;
+        cursor: pointer;
+        background: #161c25;
+        transition: 0.2s;
+    }
+
+    .filter-btn:hover {
+        background: #233044;
+    }
+
+    /* PERSONNEL LIST */
+    .person {
+        padding: 12px;
+        border-bottom: 1px solid #1d2430;
+        display: flex;
+        gap: 12px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .person:hover {
+        background: #171d28;
+    }
+
+    .icon-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #223047;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #87c7ff;
+    }
+
+    .person-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .person-name {
+        font-size: 14px;
+        color: #e7edf5;
+        margin-bottom: 4px;
+    }
+
+    .person-role {
+        font-size: 11px;
+        color: #8e9aad;
+    }
+
+    /* RIGHT CONTENT AREA */
+    .content {
+        flex: 1;
+        background: #0d0f15;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+        <h2>PERSONNEL REGISTRY</h2>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search by name, rank, posting...">
+        </div>
+
+        <div class="filters">
+            <div class="filter-btn">All</div>
+            <div class="filter-btn">Military</div>
+            <div class="filter-btn">Civilian</div>
+            <div class="filter-btn">Navy</div>
+            <div class="filter-btn">Marine</div>
+            <div class="filter-btn">Intel</div>
+            <div class="filter-btn">Nobility</div>
+            <div class="filter-btn">Clergy</div>
+        </div>
+
+        <!-- PERSONNEL LIST ITEMS -->
+        <div class="person">
+            <div class="icon-circle">CM</div>
+            <div class="person-info">
+                <div class="person-name">Collisien Mirithor</div>
+                <div class="person-role">Commander – Aen Andorvalis Naval Command</div>
+            </div>
+        </div>
+
+        <div class="person">
+            <div class="icon-circle">T</div>
+            <div class="person-info">
+                <div class="person-name">Thalanwë</div>
+                <div class="person-role">Envoy – Valaerindë Diplomatic Office</div>
+            </div>
+        </div>
+
+        <div class="person">
+            <div class="icon-circle">CM</div>
+            <div class="person-info">
+                <div class="person-name">Ceolindor Mithrhor</div>
+                <div class="person-role">Hero – Noble Lord</div>
+            </div>
+        </div>
+
+        <div class="person">
+            <div class="icon-circle">VK</div>
+            <div class="person-info">
+                <div class="person-name">Vaerethar Kael</div>
+                <div class="person-role">Guardian – Varanthar Keep</div>
+            </div>
+        </div>
+
+        <div class="person">
+            <div class="icon-circle">SA</div>
+            <div class="person-info">
+                <div class="person-name">Sylion Aurendol</div>
+                <div class="person-role">Ambassador – Galactic Assembly</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (BLANK FOR NOW) -->
+    <div class="content"></div>
+
+</div>
+
+</body>
+</html>
